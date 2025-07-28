@@ -9,15 +9,36 @@
 </head>
 <body>
     <div class="container">
-        <div class="title">Score</div>
-        <div id="score">You: 0 | Computer: 0</div>
+        <div class="header">Rock-Paper-Scissor</div>
+        <ul class="title">
+            <li class="til">Score</li>
+            <li id="score" class="til">You: 0 | Computer: 0</li>
+        </ul>
         <!-- <button id="play">play</button> -->
-        <div class="choices">
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissor">Scissor</button>
-        <div id="result">rat</div>
-    </div>
+
+
+        <ul class="ch-cont">
+            <li class="ch-li">
+                <div class="choices">
+                    <p>Your Choice:</p>
+                    <button id="rock">🪨</button>
+                    <button id="paper">📃</button>
+                    <button id="scissor">✂️</button>
+                </div>
+            </li>
+            <li class="ch-li">
+                <div class="vs"><img src="img/vs.png" height="200px" width="auto"></div>
+            </li>
+            <li class="ch-li">
+                <div class="computer-choice">
+                    <p>Computer's choice:</p>
+                    <div id="comp">🤖</div>
+                </div>
+            </li>
+        </ul>
+
+        <div id="result">Hey there! Lets play!!</div>
+    
     <script src="script.js"></script>
 </body>
 </html>

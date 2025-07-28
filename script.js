@@ -11,12 +11,14 @@ const scissorbtn= document.querySelector("#scissor");
 scissorbtn.addEventListener("click", scissor)
 /*play(genresp(),humresp());*/
 
+resp=document.querySelector("#comp");
+
 function play(h){
     let c=genresp();
     console.log(c,h);
     let res=document.querySelector("#result");
     if (h==c){
-        res.textContent=("draw");
+        res.textContent=("Draw !! Go again...");
     }
     else if ((h=="rock" && c=="scissor") || (h=="paper" && c=="rock") || (h=="scissor" && c=="paper")){
         res.textContent=("You win!!  " + `${h} beats ${c}`);
@@ -38,16 +40,17 @@ function play(h){
 
 function genresp(){
     let x=Math.floor(Math.random()*30);
+
     if (x<10){
-        alert("rock");
+        resp.textContent = "🪨";
         return("rock");
         }
     else if (x<20){
-        alert("paper");
+        resp.textContent = "📄";
         return("paper");
     }
     else if (x<30){
-        alert("scissor");
+        resp.textContent = "✂️";
         return("scissor");
     }
     else{
@@ -58,7 +61,6 @@ function genresp(){
 
 function rock(){
     play("rock");
-    console.log("rock");
 }
 function paper(){
     play("paper");
