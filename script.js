@@ -1,7 +1,7 @@
 let hsc=0;
 let csc=0;
-const butn = document.querySelector("#play");
-butn.addEventListener("click", play);
+// const butn = document.querySelector("#play");
+// butn.addEventListener("click", play);
 
 const rockbtn= document.querySelector("#rock");
 rockbtn.addEventListener("click", rock)
