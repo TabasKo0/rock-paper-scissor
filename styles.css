@@ -1,6 +1,7 @@
-*{
-    margin: 0%;
+body{
+    margin: 0px;
     background-color: #dbdcd1;
+    padding:none;
 }
 img {
     border-style: none;
@@ -17,23 +18,21 @@ ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly
+    justify-content:space-evenly;
+    height: auto;
+    width: auto;
+    align-items: center;
+    padding:10px;
 }
 
-.ch-li {
-    height: 69vh;
-    width: auto;
-    align-content: center;
-}
 .header {
     color:rgb(6, 0, 30);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:30px;
-    font-style: italic;
     display: flex;
     justify-content: center;
     background-color: #8a8bb2;
-    width:fill;
+    width:auto;
     padding:1em;
 }
 
@@ -45,10 +44,14 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    left:0px;
+    padding:10px;
+    margin:2vh;
 
-.til{
+.til {
     display: flex;
     justify-content: center;
+    
 }
 }
 .choices {
@@ -59,10 +62,10 @@ ul{
 }
 
 #rock, #paper, #scissor, #comp {
-    font-size: 69px;
+    font-size: 6vh;
     text-align: center;
     padding:0.25em;
-    width: auto;
+    width: 1.8em;
     height: 100%;
     margin: 10px auto;
     border-radius: 50px;
@@ -81,11 +84,14 @@ ul{
     text-align: center;
     padding: 0.25em;
     width: auto;
-    height: 100%;
     margin: 10px auto;
     border-radius: 50px;
     border: none;
     cursor: pointer;
     background-color: #8a8bb2;
     color: rgb(0, 0, 0);
+    display: flex;
+    justify-self: center;
+    margin-top:8vh;
+    padding:24px;
 }
